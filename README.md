@@ -1,2 +1,2 @@
 # Federal-Reserve
-This capstone project explores the relationship between major U.S. macroeconomic indicators and the performance of the S&amp;P 500 index from 2010 to 2024. Using Python and data visualization libraries, I analyze how changes in interest rates, inflation, unemployment, and Treasury yields correlate with market movements over time
+This capstone project investigates how the Federal Reserve's key policy decisions and economic indicators influence the performance of the U.S. stock market, specifically the S&P 500 index, from 2010 to 2024. By analyzing interest rates, inflation, and other Fed-related data, this project visualizes and quantifies the relationship between monetary policy and market behavior.
