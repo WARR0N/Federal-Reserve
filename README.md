@@ -8,7 +8,6 @@ The goal is to understand how Federal Reserve monetary policy impacts the stock 
 
 ## Files and Folders
 - **`notebooks/`**: Jupyter notebooks containing the analysis (data cleaning, EDA, visualization).
-- **`scripts/`**: Python scripts for running the analysis.
 - **`data/`**: Data files or a link to the dataset (if the file is too large to upload).
 - **`visuals/`**: Charts and plots created during the analysis.
 - **`final_report/`**: The final report in PDF/Word format summarizing the analysis.
