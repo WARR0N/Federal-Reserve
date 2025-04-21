@@ -36,6 +36,7 @@ What is the relationship between the unemployment rate and the Fed Funds Rate?
 
 ## 2. Methodology
 **'2.1 Data Sources'**
+
 The data used in this analysis comes from two major sources:
 Yahoo Finance: Provides historical closing price data for the S&P 500 index (Ticker: ^GSPC).
 
@@ -43,126 +44,134 @@ Yahoo Finance: Provides historical closing price data for the S&P 500 index (Tic
 Federal Reserve Economic Data (FRED): Offers macroeconomic indicators such as:
 
 
-CPI (Consumer Price Index): A measure of inflation.
+- CPI (Consumer Price Index): A measure of inflation.
 
 
-Fed Funds Rate: The interest rate at which banks lend overnight reserves to each other.
+- Fed Funds Rate: The interest rate at which banks lend overnight reserves to each other.
 
 
-10-Year Treasury Yield: A long-term interest rate used as a benchmark in financial markets.
+- 10-Year Treasury Yield: A long-term interest rate used as a benchmark in financial markets.
 
 
-Unemployment Rate: The percentage of the labor force that is unemployed but actively seeking work.
+- Unemployment Rate: The percentage of the labor force that is unemployed but actively seeking work.
 
 
-Recession Indicator: Data indicating U.S. economic recessions.
+- Recession Indicator: Data indicating U.S. economic recessions.
 
 
 **'2.2 Data Preprocessing'**
+
 The datasets were cleaned and preprocessed to ensure consistency and accuracy:
-Data from FRED was resampled to a monthly frequency to match the temporal resolution of the S&P 500 data.
+- Data from FRED was resampled to a monthly frequency to match the temporal resolution of the S&P 500 data.
 
+- Columns were renamed for clarity, and any missing values were handled either through imputation or removal.
 
-Columns were renamed for clarity, and any missing values were handled either through imputation or removal.
+- All data was converted to numeric formats where necessary, and datetime formats were applied for time series analysis.
 
-
-All data was converted to numeric formats where necessary, and datetime formats were applied for time series analysis.
-
-FRED Data was pretty clean and no duplicates were found so not much had to be done.
+- FRED Data was pretty clean and no duplicates were found so not much had to be done.
 
 
 **'2.3 Analysis Approach'**
+
 The analysis consisted of the following steps:
 Time Series Analysis: Investigating the relationship between the Fed Funds Rate and the S&P 500.
 
 
-Correlation Analysis: Exploring correlations between key economic indicators, including inflation (CPI), unemployment, and the Fed Funds Rate.
+- Correlation Analysis: Exploring correlations between key economic indicators, including inflation (CPI), unemployment, and the Fed Funds Rate.
 
 
-Recession Analysis: Examining how changes in Fed policy relate to periods of recession in the U.S. economy.
+- Recession Analysis: Examining how changes in Fed policy relate to periods of recession in the U.S. economy.
 
 
-Yield Curve Analysis: Investigating the relationship between the 10-Year Treasury Yield and the Fed Funds Rate to predict economic conditions.
+- Yield Curve Analysis: Investigating the relationship between the 10-Year Treasury Yield and the Fed Funds Rate to predict economic conditions.
 
 
 **'2.4 Visualizations'**
+
 Key visualizations were created to illustrate these relationships:
 Fed Funds Rate vs. S&P 500
 
 
-Fed Funds Rate vs. CPI (Inflation)
+- Fed Funds Rate vs. CPI (Inflation)
 
 
-Fed Funds Rate vs. Recession Periods
+- Fed Funds Rate vs. Recession Periods
 
 
-Fed Funds Rate vs. 10-Year Treasury Yield
+- Fed Funds Rate vs. 10-Year Treasury Yield
 
 
-Unemployment Rate vs. Fed Funds Rate
+- Unemployment Rate vs. Fed Funds Rate
 
 
-Yield Curve Spread (10-Year Treasury vs. Fed Funds Rate)
+- Yield Curve Spread (10-Year Treasury vs. Fed Funds Rate)
 
 
-Correlation Heatmap
+- Correlation Heatmap
 
 
 ## 3. Findings and Insights
 **'3.1 Fed Funds Rate vs. S&P 500'**
+
 The Fed Funds Rate has a direct impact on the performance of the S&P 500:
-When the Fed raises the Fed Funds Rate, borrowing costs increase, which typically results in a decrease in stock prices. This is because higher rates reduce corporate profits by increasing debt servicing costs and reducing consumer spending.
+- When the Fed raises the Fed Funds Rate, borrowing costs increase, which typically results in a decrease in stock prices. This is because higher rates reduce corporate profits by increasing debt servicing costs and reducing consumer spending.
 
 
-Conversely, lower Fed Funds Rates generally correlate with increased stock prices as they stimulate economic activity through cheaper borrowing costs, which boosts corporate earnings and investments.
+- Conversely, lower Fed Funds Rates generally correlate with increased stock prices as they stimulate economic activity through cheaper borrowing costs, which boosts corporate earnings and investments.
 
 
 **'3.2 Fed Funds Rate vs. CPI (Inflation)'**
+
 The Federal Reserve adjusts the Fed Funds Rate to influence inflation:
-When the Fed Funds Rate rises, inflation tends to decrease as higher interest rates reduce spending and borrowing, leading to a cooling effect on the economy.
+- When the Fed Funds Rate rises, inflation tends to decrease as higher interest rates reduce spending and borrowing, leading to a cooling effect on the economy.
 
 
-A decrease in the Fed Funds Rate typically leads to an increase in inflation, as lower interest rates encourage more borrowing and spending, thereby increasing demand for goods and services.
+- A decrease in the Fed Funds Rate typically leads to an increase in inflation, as lower interest rates encourage more borrowing and spending, thereby increasing demand for goods and services.
 
 
 **'3.3 Fed Funds Rate vs. Recession Periods'**
+
 Fed policies are often an important factor in economic recessions:
-Historically, the Fed has increased rates to prevent the economy from overheating, but when this rate increases too quickly or too much, it can lead to a recession.
+- Historically, the Fed has increased rates to prevent the economy from overheating, but when this rate increases too quickly or too much, it can lead to a recession.
 
 
-During economic downturns, the Fed typically reduces the Fed Funds Rate to stimulate growth. This lowering of rates makes borrowing cheaper, which can help to boost spending and investment, assisting the economy's recovery.
+- During economic downturns, the Fed typically reduces the Fed Funds Rate to stimulate growth. This lowering of rates makes borrowing cheaper, which can help to boost spending and investment, assisting the economy's recovery.
 
 
 **'3.4 Fed Funds Rate vs. 10-Year Treasury Yield'**
+
 The relationship between the 10-Year Treasury Yield and the Fed Funds Rate is a key economic indicator:
-The yield curve (10-year Treasury yield minus the Fed Funds Rate) can predict future economic conditions. A steep yield curve, where long-term rates are higher than short-term rates, indicates optimism about the future, while a flat or inverted yield curve is often seen as a precursor to an economic slowdown or recession.
+- The yield curve (10-year Treasury yield minus the Fed Funds Rate) can predict future economic conditions. A steep yield curve, where long-term rates are higher than short-term rates, indicates optimism about the future, while a flat or inverted yield curve is often seen as a precursor to an economic slowdown or recession.
 
 
 **'3.5 Unemployment Rate vs. Fed Funds Rate'**
+
 The Fed Funds Rate has a profound effect on the unemployment rate:
-A higher Fed Funds Rate tends to increase unemployment, as it slows down economic activity by making borrowing more expensive. Companies may cut back on hiring or even lay off workers as a result of higher operating costs.
+- A higher Fed Funds Rate tends to increase unemployment, as it slows down economic activity by making borrowing more expensive. Companies may cut back on hiring or even lay off workers as a result of higher operating costs.
 
 
-Conversely, a lower Fed Funds Rate is typically associated with lower unemployment as it stimulates the economy and encourages businesses to hire more workers.
+- Conversely, a lower Fed Funds Rate is typically associated with lower unemployment as it stimulates the economy and encourages businesses to hire more workers.
 
 
 **'3.6 Yield Curve Spread: 10-Year Treasury vs. Fed Funds Rate'**
+
 The yield curve spread provides insights into the economic outlook:
-A widening spread (where the 10-year Treasury yield is much higher than the Fed Funds Rate) generally signals strong economic growth ahead.
+- A widening spread (where the 10-year Treasury yield is much higher than the Fed Funds Rate) generally signals strong economic growth ahead.
 
 
-A narrowing or inverted yield curve often signals a potential economic slowdown, as investors expect weaker growth and lower inflation in the future.
+- A narrowing or inverted yield curve often signals a potential economic slowdown, as investors expect weaker growth and lower inflation in the future.
 
 
 **'3.7 Correlation Heatmap'**
+
 The correlation heatmap reveals the strength of relationships between various economic indicators:
-Fed Funds Rate and CPI (Inflation) have a strong positive correlation, highlighting the Fed's role in controlling inflation.
+- Fed Funds Rate and CPI (Inflation) have a strong positive correlation, highlighting the Fed's role in controlling inflation.
 
 
-The S&P 500 and Fed Funds Rate show a moderate correlation, suggesting that market movements are influenced by changes in Fed policy.
+- The S&P 500 and Fed Funds Rate show a moderate correlation, suggesting that market movements are influenced by changes in Fed policy.
 
 
-The unemployment rate shows a negative correlation with the Fed Funds Rate, as higher rates tend to increase unemployment.
+- The unemployment rate shows a negative correlation with the Fed Funds Rate, as higher rates tend to increase unemployment.
 
 
 ## 4. Conclusion
@@ -170,16 +179,16 @@ This analysis confirms that Federal Reserve policies, particularly decisions reg
 S&P 500 performance: The stock market tends to rise when the Fed lowers interest rates and falls when the Fed raises rates.
 
 
-Inflation: The Fed uses interest rate adjustments to control inflation, with higher rates typically reducing inflation and lower rates increasing it.
+- Inflation: The Fed uses interest rate adjustments to control inflation, with higher rates typically reducing inflation and lower rates increasing it.
 
 
-Unemployment: Higher interest rates can lead to higher unemployment as businesses reduce hiring, while lower rates tend to reduce unemployment.
+- Unemployment: Higher interest rates can lead to higher unemployment as businesses reduce hiring, while lower rates tend to reduce unemployment.
 
 
-Recession periods: The Fed's actions, particularly rate hikes, are often a precursor to economic slowdowns, and rate cuts are used to stimulate the economy during recessions.
+- Recession periods: The Fed's actions, particularly rate hikes, are often a precursor to economic slowdowns, and rate cuts are used to stimulate the economy during recessions.
 
 
-The yield curve also serves as a valuable predictor of future economic conditions, with an inverted curve signaling potential recessions. By understanding the relationships between these variables, policymakers, investors, and analysts can better anticipate future economic conditions and make more informed decisions.
+- The yield curve also serves as a valuable predictor of future economic conditions, with an inverted curve signaling potential recessions. By understanding the relationships between these variables, policymakers, investors, and analysts can better anticipate future economic conditions and make more informed decisions.
 
 ## References
 Federal Reserve Economic Data (FRED): https://fred.stlouisfed.org/
