@@ -14,7 +14,7 @@ The goal is to understand how Federal Reserve monetary policy impacts the stock 
 
 
 
-## Final Report: The Impact of Federal Reserve Policies on the U.S. Financial Market
+## The Impact of Federal Reserve Policies on the U.S. Financial Market
 ## 1. Introduction
 The Federal Reserve (Fed) is one of the most influential financial institutions in the United States. As the central bank of the U.S., it plays a crucial role in shaping the economy through its monetary policies, especially by controlling the Federal Funds Rate. The Fed’s actions directly influence a wide range of economic variables, including inflation, employment, and the broader financial markets, most notably the stock market. This report explores the impact of Federal Reserve monetary policies on the U.S. financial market, with a focus on how changes in the Fed Funds Rate affect key economic indicators like the S&P 500, inflation (CPI), unemployment, and the yield curve (the difference between the 10-year Treasury yield and the Fed Funds Rate).
 This project employs historical data from the Federal Reserve Economic Data (FRED) platform and Yahoo Finance to analyze these relationships over time, specifically from 2000 to the present.
