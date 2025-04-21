@@ -1,1 +1,24 @@
+Data Sources
 
+All datasets were sourced from [FRED - Federal Reserve Economic Data](https://fred.stlouisfed.org/).
+
+You can download each dataset from the following links:
+
+- [Consumer Price Index (CPIAUCSL)](https://fred.stlouisfed.org/series/CPIAUCSL)
+- [Federal Funds Rate (FEDFUNDS)](https://fred.stlouisfed.org/series/FEDFUNDS)
+- [10-Year Treasury Constant Maturity Rate (GS10)](https://fred.stlouisfed.org/series/GS10)
+- [Unemployment Rate (UNRATE)](https://fred.stlouisfed.org/series/UNRATE)
+- [US Recession Indicator (USREC)](https://fred.stlouisfed.org/series/USREC)
+
+## Files Used
+
+- CPIAUCSL.csv: Consumer Price Index for All Urban Consumers (a measure of inflation).
+- FEDFUNDS.csv: Federal Funds Effective Rate (the Fed’s primary interest rate tool).
+- GS10.csv: 10-Year U.S. Treasury Constant Maturity Rate (long-term interest rate benchmark).
+- UNRATE.csv: Civilian Unemployment Rate.
+- USREC.csv: U.S. Recession Indicator (1 = in recession, 0 = not in recession).
+
+## Notes
+
+- All datasets are monthly.
+- Each dataset includes a `DATE` column which was used to merge them on a common time index.
